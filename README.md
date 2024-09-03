@@ -4,12 +4,12 @@ Welcome to the **Physicist Portfolio Website** project! This is a personal portf
 
 ## 🚀 Live Demo
 
-Check out the live version of the website [here](#).
+Check out the live version of the website [here](#https://saimaphysicist.netlify.app/).
 
 ## 🖼️ Screenshots
 
-![Screenshot of Home Page](#) <!-- Add actual image URLs here -->
-![Screenshot of About Page](#)
+![Screenshot of Home Page](#https://drive.google.com/file/d/1Bg_QaVkVY00MhG3vIvL6zEWOSFy0MKd1/view) <!-- Add actual image URLs here -->
+![Screenshot of About Page](#https://drive.google.com/file/d/1acVIOW-Yr3Au9uCWqhS8_8Cj4ynMKUt3/view)
 
 ## 🎯 Features
 
@@ -24,7 +24,7 @@ Check out the live version of the website [here](#).
 - **React**: A JavaScript library for building user interfaces.
 - **CSS3**: For styling and making the site responsive.
 - **Font Awesome**: For the icons used throughout the site.
-- **GitHub Pages**: For hosting the website.
+- **Netlify**: For hosting the website.
 
 ## 📝 Getting Started
 
