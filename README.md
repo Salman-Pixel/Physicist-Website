@@ -4,7 +4,7 @@ Welcome to the **Physicist Portfolio Website** project! This is a personal portf
 
 ## 🚀 Live Demo
 
-Check out the live version of the website [https://saimaphysicist.netlify.app/].
+Check out the live version of the website at: https://saimaphysicist.netlify.app/
 
 ## 🖼️ Screenshots
 
