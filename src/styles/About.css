@@ -1,0 +1,160 @@
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    background-color: rgba(223, 8, 8, 0); /* Slightly transparent background */
+    color: #eeeeee;
+    position: relative; /* Ensures proper stacking of children elements */
+    z-index: 2; /* Ensures the content is above the stars and planets */
+    margin: 0 auto;
+    max-width: 1200px; /* Limits the maximum width of the grid */
+    top: 50px; /* Adjusts the top spacing */
+}
+
+/* Individual about boxes */
+.about-box {
+    width: 80%; /* Full width within the grid */
+    height: auto; /* Auto height to fit content */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #444;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.about-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Hover effect for about boxes */
+.about-box:hover {
+    transform: translateY(-10px);
+}
+
+.about-title {
+    color: #FF4500;
+    margin-bottom: 10px;
+    font-size: 1.5rem; /* Adjust title size */
+}
+
+/* Styling for the rotating planet */
+.planet-2 {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.5); /* Scaled up for better visibility */
+    animation: planetRotate 60s linear infinite;
+    opacity: 0.7; /* Makes the planet slightly transparent */
+}
+
+/* Keyframes for planet rotation */
+@keyframes planetRotate {
+    0% {
+        transform: translate(-50%, -50%) scale(1.5) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.5) rotate(360deg);
+    }
+}
+
+/* Canvas styling for stars */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2; /* Ensures stars are behind everything */
+    pointer-events: none; /* Prevents interaction with the canvas */
+}
+
+/* Footer styling */
+.about-footer {
+    grid-column: span 1; /* Ensures the footer spans the full width of the grid */
+    text-align: center;
+    align-self: center;
+    padding: 20px;
+    /* background-color: #333; */
+    color: #fff;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+
+
+
+/* Media Queries for Mobile Devices */
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 20px;
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 15px; /* Reduced gap */
+        top: 20px; /* Adjust top spacing */
+    }
+
+    .about-box {
+        width: 100%; /* Ensure boxes take full width */
+        padding: 15px; /* Reduced padding */
+    }
+
+    .about-title {
+        font-size: 1.2rem; /* Adjust title size */
+    }
+
+    .about-title i {
+        font-size: 1.4rem; /* Adjust icon size */
+    }
+
+    .about-image {
+        height: 400px; /* Adjust image height */
+    }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+    .about-container {
+        padding: 20px;
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 15px; /* Reduced gap */
+        top: 20px; /* Adjust top spacing */
+    }
+
+    .about-box {
+        width: 90%; /* Ensure boxes take full width */
+        padding: 15px; /* Reduced padding */
+    }
+    .about-title {
+        font-size: 1rem; /* Further reduce title size */
+    }
+
+    .about-title i {
+        font-size: 1.2rem; /* Further reduce icon size */
+    }
+
+    .about-image {
+        height: 250px; /* Further adjust image height */
+    }
+
+    /* Footer styling */
+    .about-footer {
+    grid-column: span 1;
+    text-align: center;
+    align-self: center;
+    place-items: center;
+    
+    padding: 20px;
+    /* background-color: #333; */
+    color: #fff;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    
+}
+}
