@@ -8,8 +8,8 @@ Check out the live version of the website at: https://saimaphysicist.netlify.app
 
 ## 🖼️ Screenshots
 
-!(https://drive.google.com/file/d/1Bg_QaVkVY00MhG3vIvL6zEWOSFy0MKd1/view)
-!(https://drive.google.com/file/d/1acVIOW-Yr3Au9uCWqhS8_8Cj4ynMKUt3/view)
+![](https://drive.google.com/file/d/1Bg_QaVkVY00MhG3vIvL6zEWOSFy0MKd1/view)
+![](https://drive.google.com/file/d/1acVIOW-Yr3Au9uCWqhS8_8Cj4ynMKUt3/view)
 
 ## 🎯 Features
 
